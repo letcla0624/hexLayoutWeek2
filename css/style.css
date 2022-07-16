@@ -1,0 +1,146 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+img {
+  vertical-align: middle;
+}
+.container {
+  width: 1200px;
+}
+.d-flex {
+  display: flex;
+}
+.jcc {
+  justify-content: center;
+}
+.aic {
+  align-items: center;
+}
+.text-white {
+  color: white;
+}
+.lh-42 {
+  line-height: 42px;
+}
+h1 {
+  font-size: 80px;
+  line-height: 106px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 64px;
+  line-height: 84px;
+}
+.banner {
+  padding: 308px 0;
+  background: url("../images/banner.png") center center no-repeat;
+  background-size: cover;
+}
+.banner-content {
+  width: 304px;
+  text-align: left;
+  font-weight: 700;
+}
+.banner-content p {
+  padding: 32px 0 40px;
+  width: 283px;
+}
+.banner-content li:not(:last-child) {
+  margin-right: 16px;
+}
+.about {
+  width: 412px;
+  margin: 0 auto;
+  padding: 56px 0;
+}
+.about img {
+  margin: 40px 0 20px;
+}
+.about .file > p {
+  margin-bottom: 4px;
+}
+.about .text-content {
+  font-weight: 700;
+}
+.about .text-content > p {
+  padding: 4px 0 24px;
+}
+.about ul {
+  width: 384px;
+  border-top: 1px solid #000;
+  padding-top: 27px;
+}
+.about li:not(:last-child) {
+  margin-bottom: 28px;
+}
+.about li > span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #891818;
+  margin-right: 16px;
+}
+.bg-black {
+  background-color: #000;
+}
+.brand {
+  padding: 56px 0 160px;
+}
+.brand .text-content {
+  width: 320px;
+  margin: 12px auto 68px;
+}
+.sub {
+  margin-bottom: 32px;
+}
+.sub-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 56px;
+}
+.brand img {
+  margin-bottom: 40px;
+}
+.brand .d-flex > img {
+  margin: 0 12px;
+}
+.works {
+  padding: 56px 0 96px;
+}
+.works h2 {
+  margin-bottom: 16px;
+}
+.works ul {
+  width: 1224px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.works li {
+  margin: 0 12px 48px;
+}
+.works li > p {
+  margin-top: 16px;
+  font-size: 20px;
+}
+.footer .text-content {
+  width: 315px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+.footer h2,
+.footer li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer li > a {
+  text-decoration: none;
+}
+.footer li > a:hover {
+  color: #d1d1d1;
+}
