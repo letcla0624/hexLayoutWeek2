@@ -1,6 +1,11 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -12,7 +17,8 @@ img {
   vertical-align: middle;
 }
 .container {
-  width: 1200px;
+  width: 1224px;
+  margin: 0 auto;
 }
 .d-flex {
   display: flex;
@@ -34,17 +40,16 @@ h1 {
   line-height: 106px;
   font-weight: 900;
 }
-h2 {
+.title {
   font-size: 64px;
   line-height: 84px;
 }
 .banner {
-  padding: 308px 0;
+  height: 100vh;
   background: url("../images/banner.png") center center no-repeat;
   background-size: cover;
 }
 .banner-content {
-  width: 304px;
   text-align: left;
   font-weight: 700;
 }
@@ -56,28 +61,34 @@ h2 {
   margin-right: 16px;
 }
 .about {
-  width: 412px;
   margin: 0 auto;
   padding: 56px 0;
 }
 .about img {
   margin: 40px 0 20px;
 }
-.about .file > p {
+.file > li {
   margin-bottom: 4px;
+}
+.file > li:nth-child(2) {
+  margin-bottom: 8px;
+}
+.file > li:last-child {
+  margin-bottom: 24px;
 }
 .about .text-content {
   font-weight: 700;
 }
-.about .text-content > p {
+.about .text-content > li {
   padding: 4px 0 24px;
 }
-.about ul {
+.position {
   width: 384px;
   border-top: 1px solid #000;
   padding-top: 27px;
+  margin: 0 auto;
 }
-.about li:not(:last-child) {
+.position li:not(:last-child) {
   margin-bottom: 28px;
 }
 .about li > span {
@@ -94,10 +105,10 @@ h2 {
   padding: 56px 0 160px;
 }
 .brand .text-content {
-  width: 320px;
   margin: 12px auto 68px;
 }
-.sub {
+.sub-title {
+  font-size: 24px;
   margin-bottom: 32px;
 }
 .sub-text {
@@ -105,11 +116,11 @@ h2 {
   line-height: 30px;
   margin-bottom: 56px;
 }
-.brand img {
-  margin-bottom: 40px;
+.brand ul {
+  flex-wrap: wrap;
 }
-.brand .d-flex > img {
-  margin: 0 12px;
+.brand li {
+  margin: 0 12px 40px 12px;
 }
 .works {
   padding: 56px 0 96px;
@@ -118,8 +129,6 @@ h2 {
   margin-bottom: 16px;
 }
 .works ul {
-  width: 1224px;
-  margin: 0 auto;
   flex-wrap: wrap;
 }
 .works li {
